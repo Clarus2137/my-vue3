@@ -85,6 +85,7 @@
                      _limit: this.limit
                   }
                });
+               console.log(response);
                this.totalPages = Math.ceil(response.headers['x-total-count'] / this.limit);
                this.posts = response.data;
             } catch(e) {
